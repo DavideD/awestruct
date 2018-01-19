@@ -1,7 +1,5 @@
 sudo: false
-
-before_install:
-  - gem install bundler
+dist: trusty
 language: ruby
 rvm:
   - 2.0.0
@@ -36,3 +34,5 @@ matrix:
     - rvm: jruby-head
 notifications:
   irc: 'irc.freenode.org#awestruct'
+before_install:
+  - gem install bundler
